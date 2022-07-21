@@ -1,6 +1,6 @@
-INSERT INTO sugang.class (grade,subject0,name,id,`time`,credit,professor,`date`,room)
+INSERT INTO sugang.class (grade,subject,name,id,`time`,credit,professor,`date`,room)
 	VALUES (1,'전필','c언어',1,3,3,'김','월','233');
-INSERT INTO sugang.class (grade,subject0,name,id,`time`,credit,professor,`date`,room)
+INSERT INTO sugang.class (grade,subject,name,id,`time`,credit,professor,`date`,room)
 	VALUES (1,'전필','자바',2,3,3,'이','월','232');
 
 
