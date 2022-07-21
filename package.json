@@ -1,0 +1,28 @@
+{
+  "name": "sugang_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dialog": "^0.3.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.1",
+    "jade": "^1.11.0",
+    "mysql": "^2.18.1",
+    "nvm": "^0.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g0709-19/sugang_system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g0709-19/sugang_system/issues"
+  },
+  "homepage": "https://github.com/g0709-19/sugang_system#readme"
+}
