@@ -4,7 +4,7 @@ USE sugang;
 ##class 
 CREATE TABLE class (
     grade int not NULL,
-    subject0 varchar(10) not NULL,
+    subject varchar(10) not NULL,
     name varchar(10) not NULL,
     id int primary key,
     time int not null,
