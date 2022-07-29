@@ -1,6 +1,6 @@
 //const { response } = require("express");
 
-const url ="http://localhost:3000/api/get/class?univ=0";
+const url ="http://www.kguniv.xyz/api/get/class?univ=0";
 
 
 let userList = document.querySelector(".tbody");
@@ -23,7 +23,7 @@ searchDataBtn.addEventListener('click', handleSearchData);
 //대학인풋박스 입력했을때 실행되는 함수
 function createDepartmentInput(event)
 {
-  fetch(`http://localhost:3000/api/get/class?Major=${event.target.value}`)
+  fetch(`http://www.kguniv.xyz/api/get/class?Major=${event.target.value}`)
   .then((response)=>{
     return response.json(response);
   })
@@ -48,7 +48,7 @@ function createDepartmentInput(event)
 function addBtnEvent(event){
     
   let class_id= event.target.parentNode.querySelector('.classId').innerText;
-  let url_del =`http://localhost:3000/api/delist/${class_id}`;
+  let url_del =`http://www.kguniv.xyz/api/delist/${class_id}`;
   
   fetch(url_del)
   .then((response)=>{
@@ -72,7 +72,7 @@ function addBtnEvent(event){
 function lookUpList(){
 
   let res;
-  const url2 ="http://localhost:3000/api/get/class?user=1";
+  const url2 ="http://www.kguniv.xyz/api/get/class?user=1";
   fetch(url2)//비동기
   .then((response) => {
     return response.json(response);
@@ -171,11 +171,11 @@ function showClasses(univ, major) {
   // 전공이 있는 경우
   let url = undefined;
   if (major) {
-    url = `http://localhost:3000/api/get/class?major=${major}`;
+    url = `http://www.kguniv.xyz/api/get/class?major=${major}`;
   } else if (univ) {
-    url = `http://localhost:3000/api/get/class?univ=${univ}`;
+    url = `http://www.kguniv.xyz/api/get/class?univ=${univ}`;
   } else {
-    url = `http://localhost:3000/api/get/class`;
+    url = `http://www.kguniv.xyz/api/get/class`;
   }
 
   const tbody = document.getElementById('calendarResult');
@@ -220,7 +220,7 @@ function addRow(tbody, grade, subject, name, id, time, credit, professor, date, 
 function addCBtnEvent(event){
     
   let class_id= event.target.parentNode.querySelector('.classId').innerText;
-  let url_del =`http://localhost:3000/api/enroll/${class_id}`;
+  let url_del =`http://www.kguniv.xyz/api/enroll/${class_id}`;
   
   fetch(url_del)
   .then((response)=>{
